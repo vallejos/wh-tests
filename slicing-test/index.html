@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>WalletHub Slicing Test</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/wh.css" type="text/css" />
+    </head>
+    <body>
+        <div id="top-sliver"></div>
+
+        <div id="header" class="sprite sprite-header-background">
+            <div id="header-wrapper">
+
+                <div id="top-header">
+                    <div id="left-header">
+                        <div id="logo" class="sprite sprite-logo">
+                        </div>
+                        <div id="vertical-spacer" class="sprite sprite-vertical-spacer"></div>
+                        <h4>lorem ipsum dolor sit...</h4>
+                    </div>
+                    <div id="right-header">
+                        <button>Zaloguj się</button>
+                        <button>Rejestracja</button>
+                    </div>
+                    <div id="clear"></div>
+                </div><!-- end top-header -->
+
+                <div id="menu" class="sprite sprite-menu-background">
+
+                    <ul id="nav">
+                        <li>
+                            <div class="cell">
+                                <a href="" title=""><span>Strona Gt.</span></a>
+                                <ul id="submenu">
+                                    <li><a href="" title=""><span>Option 1</span></a></li>
+                                    <li><a href="" title=""><span>Option 2</span></a></li>
+                                    <li><a href="" title=""><span>Option 3</span></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cell">
+                                <a href="" title=""><span>Użytkownicy</span></a>
+                                <ul id="submenu">
+                                    <li class="sprite sprite-submenu-vertical-spacer"><a href="" title=""><span>Przeglądaj</span></a></li>
+                                    <li class="sprite sprite-submenu-vertical-spacer"><a href="" title=""><span>Online</span></a></li>
+                                    <li class="sprite sprite-submenu-vertical-spacer"><a href="" title=""><span>Znajomi</span></a></li>
+                                    <li class="sprite sprite-submenu-vertical-spacer"><a href="" title=""><span>Wyszukiwarka</span></a></li>
+                                    <li class="sprite sprite-submenu-vertical-spacer"><a href="" title=""><span>Moje konto</span></a></li>
+                                    <li class="sprite sprite-submenu-vertical-spacer"><a href="" title=""><span>Moja poczta</span></a></li>
+                                    <li class="sprite sprite-submenu-vertical-spacer"><a href="" title=""><span>Moj profil</span></a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="cell">
+                                <a href="" title=""><span>Filmy</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cell">
+                                <a href="" title=""><span>Muzyka</span></a>
+                                <ul id="submenu">
+                                    <li><a href="" title=""><span>Option 1</span></a></li>
+                                    <li><a href="" title=""><span>Option 2</span></a></li>
+                                    <li><a href="" title=""><span>Option 3</span></a></li>
+                                    <li><a href="" title=""><span>Option 4</span></a></li>
+                                    <li><a href="" title=""><span>Option 5</span></a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="cell">
+                                <a href="" title=""><span>Zdjęcia</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cell">
+                                <a href="" title=""><span>Gry</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cell">
+                                <a href="" title=""><span>Blogi</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cell">
+                                <a href="" title=""><span>Grupy</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cell">
+                                <a href="" title=""><span>Forum</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cell">
+                                <a href="" title=""><span>Chat</span></a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div><!-- end main-menu -->
+
+            </div><!-- end header-wrapper -->
+
+        </div><!-- end header -->
+
+        <div id="content">
+            &nbsp;
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+            // Make the first class selected
+            $("#nav > li:nth-child(2)").addClass("selected");
+            $("#nav > li:nth-child(2) > .cell").addClass("selected");
+
+            // Switch the selected class
+            $("#nav > li").click(function() {
+                $(".selected").removeClass("selected");
+                $(this).addClass("selected");
+                $(this).children(".cell").addClass("selected");
+            });
+
+            // Disable menu links
+            $("#nav > li > .cell > a").click(function(e) {
+                e.preventDefault();
+            });
+
+            // disable submenu links
+            $("#nav > li > .cell > ul > li > a").click(function(e) {
+                e.preventDefault();
+                // random url: just open my blog :)
+                window.open('http://fabianvallejos.com', '_blank');
+            });
+        </script>
+
+
+    </body>
+</html>
