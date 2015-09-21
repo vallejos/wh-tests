@@ -1,0 +1,32 @@
+#search {
+    width: 200px;
+}
+
+.loading {
+    background: url('../img/loading.gif') no-repeat right center;
+    background-size: 16px 16px;
+}
+
+#results {
+    width: 200px;
+    display: none;
+    border: 1px solid #c0c0c0;
+}
+
+#results .slug {
+    display: none;
+}
+
+#results .item {
+    padding: 3px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#results .item:last-child {
+    border-bottom: 0;
+}
+
+#results .item:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
