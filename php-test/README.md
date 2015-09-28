@@ -26,9 +26,9 @@ About the files:
 
 
 # Test 2: Wordpress plugin
-Download and install the plugin zip file: wh-plugin.zip
+Download and unzip the plugin zip file https://github.com/vallejos/wh-tests/raw/master/php-test/wh-plugin.zip into the wp-content/plugins folder of your wordpress installation.
 The shortcode to include into the theme is: [whp-search]
-The table population will be created on install. You can download and upload the csv file to fill the table to make it work.
+The table population will be created on install. You can download and upload the csv file to fill the table to make it work from the Settings page of your wp-admin.
 All code is under the wh-plugin/ folder.
 
 # Test 3: pagination function
