@@ -1,0 +1,28 @@
+.whp-loading {
+    background: url('../img/loading.gif') no-repeat right center;
+    background-size: 16px 16px;
+}
+
+#whp-results {
+    margin-top: -33px;
+    display: none;
+    border: 1px solid #c0c0c0;
+}
+
+#whp-results .slug {
+    display: none;
+}
+
+#whp-results .item {
+    padding: 3px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+#whp-results .item:last-child {
+    border-bottom: 0;
+}
+
+#whp-results .item:hover {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}

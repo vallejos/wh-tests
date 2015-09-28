@@ -26,7 +26,10 @@ About the files:
 
 
 # Test 2: Wordpress plugin
-Not Available.
+Download and install the plugin zip file: wh-plugin.zip
+The shortcode to include into the theme is: [whp-search]
+The table population will be created on install. You can download and upload the csv file to fill the table to make it work.
+All code is under the wh-plugin/ folder.
 
 # Test 3: pagination function
 Used regular expressions, see file: test3.php
